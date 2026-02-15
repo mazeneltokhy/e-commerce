@@ -1,5 +1,4 @@
 import { ProductCard } from '@/components/productCard/ProductCard'
-import SidebarFilter from '@/components/sideBarFilter/SideBarFilter'
 import { ProductI, CategoryI, SubcategoryI } from '@/interfaces'
 
 async function getData(category?: string, subcategory?: string) {
@@ -37,7 +36,6 @@ export default async function ProductsPage({
     return (
         <main className="container mx-auto py-10 px-4">
             <div className="flex flex-col lg:flex-row gap-10">
-                <SidebarFilter categories={categories} subcategories={subcategories} />
                 <div className="flex-1">
                     <div className="flex justify-between items-baseline mb-8 border-b pb-4">
                         <h1 className="text-4xl font-black tracking-tighter uppercase italic">
